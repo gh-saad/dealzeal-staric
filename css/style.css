@@ -1,0 +1,109 @@
+/*global style*/
+*{
+
+}
+a{
+
+}
+/*/global style*/
+/*
+###############################################################
+						header
+###############################################################
+*/
+.form-inline{
+	width: 70%;
+}
+#loc-selector{
+	width: 40%;
+}
+
+/*
+###############################################################
+						main menu
+###############################################################
+*/
+#main-menu ul{
+	background: #39abf2;
+}
+#main-menu ul a{
+	color: #fff;
+}
+
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+.sr-only{
+	color: #000;
+}
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+/*nav bar */
+header .form-inline .btn{
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#search-bar{
+	border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    letter-spacing: -1px;
+}
+#main-menu .nav-item{
+	border: .01em solid #fff;
+}
+/*
+###############################################################
+						slider
+###############################################################
+*/
+.slide-footer{
+	border-top: 1px solid rgba(0,0,0,.125);
+	background-color:#39abf2;
+	color: #fff;
+
+}
+.slide-title{
+	color: #fff;
+	font-size: 1.5em;
+
+
+}
+.discount{
+	font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3em;
+    text-decoration: none;
+    padding: 1px;
+    background-color: #fff;
+    color: #ff7b02;
+}
+.btn-slide{
+	color: #000;
+	background-color: #fff;
+	border-color: #fff;
+}
