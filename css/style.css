@@ -2,9 +2,10 @@
 *{
 
 }
-a{
-
+a:hover{
+	text-decoration: none;
 }
+
 /*/global style*/
 /*
 ###############################################################
@@ -24,7 +25,7 @@ a{
 ###############################################################
 */
 #main-menu ul{
-	background: #39abf2;
+	background-color: #76c353;
 }
 #main-menu ul a{
 	color: #fff;
@@ -90,10 +91,8 @@ header .form-inline .btn{
 .slide-title{
 	color: #fff;
 	font-size: 1.5em;
-
-
 }
-.discount{
+.discount-slider{
 	font-size: 15px;
     font-weight: 600;
     line-height: 1.3em;
@@ -106,4 +105,118 @@ header .form-inline .btn{
 	color: #000;
 	background-color: #fff;
 	border-color: #fff;
+}
+
+/*
+###############################################################
+						shop page deals loop
+###############################################################
+*/
+.card-body{
+	padding: .5rem;
+}
+.discount{
+	padding: 3px 6px;
+    font-size: 0.9375em;
+    font-weight: 600;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff7b02; 
+}
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.05);
+}
+.card-title{
+    overflow-y: hidden;
+    height: 2.5em;
+    font-size: 1.0625em;
+    line-height: 1.3em;
+    font-weight: 600;
+
+}
+.card-title a{
+	color: #333;
+}
+.card-text{
+	overflow-y: hidden;
+	height: 1.3em;
+    font-size: 0.875em;
+    line-height: 1.3em;
+    color: #999;
+}
+.deal-location{
+    padding: 3px 6px;
+    font-size: 0.6875em;
+    font-weight: 500;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    background-color: #f6f6f6;
+}
+
+.deal-location a{
+    color: #ff7b02;	
+}
+.deal-price{
+	
+}
+.old{
+	color:  #bee1f7;
+}
+.deal-btn{
+	border-radius: 0;
+    padding: 5px 15px;
+    background: #fff;
+    color: #333;
+
+}
+.card-footer{
+	background-color:#39abf2;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+/*
+###############################################################
+						footor
+###############################################################
+*/
+.footer{
+	background-color: #999;
+	color:#fff;
+}
+.footer a{
+	color: #fff;
+}
+.footer-copyright{
+	border-top: 1px solid grey;
+}
+/*
+###############################################################
+                     deal detail page
+###############################################################
+*/
+.breadcrumb
+{
+    background-color: transparent;
+}
+.add-card-btn,.quick-btn{
+    width: 100%;
+}
+.deal-desc{
+    font-size: 13px;
+}
+.icon{
+    border: 1px solid #c1c1c1;
+    padding: .5em .79em;
 }
