@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dealzeal4u | Deal Detail Page </title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">  
-	<link rel="stylesheet" href="vendor/bootstrap-v4/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+  <title>Dealzeal4u | Home</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">  
+  <link rel="stylesheet" href="vendor/bootstrap-v4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-<div class="container">
-	<img width="100%" src="images/largeleaderboard.jpg">
+<div class="container"><!--remove text-center class-->
+  <img width="100%" src="images/largeleaderboard.jpg">
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
@@ -20,25 +21,26 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <input id="search-bar" class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search">
+    <button class="btn btn-primary mr-sm-2" type="submit"><i class="fas fa-search"></i></button>
+    <select class="form-control mr-sm-2 custom-select" id="loc-selector">
+      <option selected value="1">Houston</option>
+      <option value="2">dubai</option>
+    </select>
   </form>
      <ul class="navbar-nav ml-auto">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-user-alt">&nbsp;</i> My account
+          <i class="fas fa-user-alt"></i> 
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Sign In</a>
+          <a class="dropdown-item" href="#">Sign Up</a>
         </div>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#">
-        	<i class="fas fa-shopping-cart"></i>sh
+          <i class="fas fa-shopping-cart"></i>
         <span class="sr-only">(current)</span></a>
       </li>
     </ul>
@@ -48,41 +50,7 @@
 </header>
 
       <main class="container mt-2 mb-2">
-        <div id="main-menu">
-          <ul class="nav nav-pills nav-fill container mb-2 pl-3 pr-3 text-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-check"></i><br/>
-                New In
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="far fa-star"></i><br/>
-              Bestseller</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-utensils"></i><br/>
-              Food</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Disabled</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Longer nav link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
+
         <!----------------------------------------------------------Breadcrumb-------------------------------------------------------------------->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -122,57 +90,79 @@
                 <p>
                   loreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsum
                   loreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum 
+                  loreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsum
+                  loreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum loreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsum
+                  loreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum loreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsum
+                  loreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum loreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsum
+                  loreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum ipsumloreum 
                 </p>
               </div>
             </div>
+
             <table class="table table-bordered">
+            <thead class="thead-dark text-center">
               <tr>
-                <th  class="text-center">Highlights</th>
-                <th class="text-center">Conditions</th>
+                <th scope="col">Highlights</th>
+                <th scope="col">Conditions</th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
-                <td>
-                  
-                </td>
-                <td>
-                  <p></p>
-                </td>
+                <th scope="row">1</th>
+                <td>Mark</td>
               </tr>
-            </table>
+            </tbody>
+          </table>
             
           </div><!--/col-->
           <div class="col-lg-4">
             <!--Right pane-->
-            <div class="card sticky-top">
-            <div class="card-header m-2">
-              <center><h6 class="text-center card-heading">For a limited time only</h6>
-              <button class="btn btn-light text-success card_bought_btn">13BOUGHT</button>
-              </center>
+            <div class="deal-price-box sticky-top">
+            <div class="deal-bought-box text-center m-2">
+              <h6 class="deal-bought-heading">For a limited time only</h6>
+              <p class="deal-bought-lable">13BOUGHT</p>
             </div>
             <div class="card-body">
-              <h3 class="card-title text-center">Deal Title</h3>
-              <h3 class="card-title text-center">$12,640.00</h3>
-              <div class="  d-flex item-card" >
-                <div class="p-2 item-value" >
+              
+              <h3 class="deal-title text-center">Deal Title</h3>
+              <h1 class="deal-price text-center">$12,640.00</h1>
+              <div class="d-flex deal-sale-price-box mb-2">
+              <ul class="nav nav-pills nav-fill text-center">
+                <li class="nav-item">
+                  <p>$13,900.00</p>
+                  <span class="text-center  text-secondary" >VALUE</span>
+                </li>
+                <li class="nav-item">
+                  <p>8%</p>
+                  <span class="text-center  text-secondary" >DISCOUNT</span>
+                </li>
+                <li class="nav-item b-0">
+                  <p>$13,900.00</p>
+                  <span class="text-center  text-secondary" >SAVINGS</span>
+                </li>
+              </ul>
+              <!-- 
+              <div class=" d-flex item-card deal-sale-price-box" >
+                <div class="item-value" >
                   <h6 class="m-1">$13,900.00</h6>
                   <p class="text-center  text-secondary" >VALUE</p>
                 </div>
-                <div class="p-2 item-value" >
+                <div class="item-value" >
                   <h6 class="m-1">-9%</h6>
                   <p class="text-center text-secondary " >DISCOUNT</p>
                 </div>
-                <div class="p-2">
+                <div class="item-value">
                   <h6 class="m-1">$1,260.00</h6>
                   <p class="text-center text-secondary " >SAVINGS</p>
                 </div>
-                
+ -->
               </div>
               
-              <button class="btn btn-primary quick-btn mb-1">QUICK CHECKOUT</button>
+              <button class="btn btn-primary quick-btn mb-1" data-toggle="modal" data-target="#exampleModalCenter">QUICK CHECKOUT</button>
               
               <button class="btn btn-primary add-card-btn">ADD TO CART</button>
            
-              <img src="images/print-lable.png" class="mx-auto d-block">
+              <img src="images/print-lable.png" class="mx-auto d-block" width="100%">
               <p class="text-center text-secondary mt-1">Share this deal</p>
               <div class="d-flex">
                 <div class="icon rounded-circle text-center mr-2" style="">
@@ -199,12 +189,117 @@
               </div>
             </div>
           </div>
-          </div><!--/col-->
+          </div><!-- /col -->
+        </div><!-- /row -->
+        <!-- Quick chackout Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- / Quick chackout Modal -->
+        <div class="row">
+          <div class="col-lg-8">
+            <!-- Related product -->
+            <h1>Related Deals</h1>
+
+            <div class="row">  
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="img-hover-zoom">
+                  <a href="">
+                    <img src="images/slider1.jpg" class="card-img-top" alt="...">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="card-title">
+                  <a href="#">4 Hour Dubai City Tour by Coast to Coast</a>
+                   </div>
+                  <p class="card-text">Home pickup & drop off inclusive</p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <span class="discount">30% OFF</span>
+                    </div>
+                      <div class="col-lg-6 text-right">
+                      <span class="card-location"><a href="#">deal location</a></span>
+                      </div>
+                  </div>
+                </div>
+                <div class="card-footer p-1">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="mt-1 card-price">ADE.<s class="old">350</s>200</h4>
+                    </div>
+                      <div class="col-lg-6 text-right">
+                      <a href="#" class="btn deal-btn">View deal</a>
+                      </div>
+                  </div>  
+                </div>    
+              </div>
+            </div><!--col-->
+
+            <div class="col-lg-6">
+                <div class="card">
+                <div class="img-hover-zoom">
+                  <a href="">
+                    <img src="images/slider1.jpg" class="card-img-top" alt="...">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="card-title">
+                  <a href="#">4 Hour Dubai City Tour by Coast to Coast</a>
+                   </div>
+                  <p class="card-text">Home pickup & drop off inclusive</p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <span class="discount">30% OFF</span>
+                    </div>
+                      <div class="col-lg-6 text-right">
+                      <span class="card-location"><a href="#">deal location</a></span>
+                      </div>
+                  </div>
+                </div>
+                <div class="card-footer p-1">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h4 class="mt-1 card-price">ADE.<s class="old">350</s>200</h4>
+                    </div>
+                      <div class="col-lg-6 text-right">
+                      <a href="#" class="btn deal-btn">View deal</a>
+                      </div>
+                  </div>  
+                </div>    
+              </div>
+            </div><!--col-->
+            </div><!--row-->
+
+            
+          </div><!-- /col -->
+          <div class="col-lg-4">
+            <div class="seller-info-blog">
+              <h1>Seller Info</h1>
+              <p></p>
+            </div>
+          </div><!-- /col -->
+        </div><!-- /row -->
 
 </main>
 <!-- Footer -->
-<footer class="page-footer pt-4" style="border: 1px solid">
+<footer class="footer pt-4">
 
   <!-- Footer Links -->
   <div class="container text-center text-md-left">
@@ -279,12 +374,14 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style="border: 1px solid">© 2018 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  <div class="footer-copyright text-center py-3">Create by:
+    <a href="http://www.webomizer.com">Webomizer.com</a>
   </div>
   <!-- Copyright -->
 
 </footer>
+<!-- Footer -->
+
 <!-- Footer -->
 <!-- jQuery library -->
 <script src="vendor/jquery/jquery.min.js"></script>
