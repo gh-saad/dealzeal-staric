@@ -1,3 +1,9 @@
+/*
+Brand color codes:
+orange => #ff7b02;
+grey => #f6f6f6;
+green => #76c353
+*/
 /*global style*/
 *{
 
@@ -164,10 +170,10 @@ header .form-inline .btn{
     background-color: #f6f6f6;
 }
 
-.deal-location a{
+.card-location a{
     color: #ff7b02;	
 }
-.deal-price{
+.card-price{
 	
 }
 .old{
@@ -218,5 +224,78 @@ header .form-inline .btn{
 }
 .icon{
     border: 1px solid #c1c1c1;
-    padding: .5em .79em;
+    padding: .4em .7em;
+}
+.seller-info-blog{
+    border: 1px solid #c1c1c1;
+    margin-top: .5rem!important;
+    padding: 1px;
+
+}
+.deal-title{
+    height:  1.5em;
+}
+.deal-price-box{
+    padding: .5em;
+   border: 1px solid #e6e6e6; 
+}
+.deal-bought-box{
+    background-color: #f6f6f6;
+    padding: .5em;
+}
+.deal-bought-heading{
+    color: #ff7b02
+}
+.deal-bought-lable{
+    width: fit-content;
+    margin: auto;
+    padding: 2px 7px!important;
+    margin-top: 6px!important;
+    margin-bottom: 3px!important;
+    font-weight: 500!important;
+    line-height: 1.2em!important;
+    text-transform: uppercase!important;
+    color: #4f9938!important;
+    border: 1px solid #cfcfcf!important;
+    background-color: #fff!important;
+    box-shadow: 0 4px 2px -2px #e4e4e4!important;
+
+}
+.deal-price{
+    color: #000000;
+    font-weight: 700;
+    line-height: 1.05;
+    font-size: 45px;
+}
+.deal-sale-price-box{
+    background-color: #f6f6f6;
+    webkit-box-shadow: 0 2px 3px -1px rgba(186, 186, 186, 0.7);
+    -khtml-box-shadow: 0 2px 3px -1px rgba(186, 186, 186, 0.7);
+    -moz-box-shadow: 0 2px 3px -1px rgba(186, 186, 186, 0.7);
+    box-shadow: 0 2px 3px -1px rgba(186, 186, 186, 0.7);
+}
+.deal-sale-price-box ul{
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.deal-sale-price-box ul li{
+    border-right: 1px solid #eaeaea;
+}
+.deal-sale-price-box ul li:last-child{
+    border: none;
+}
+.deal-sale-price-box ul li p{
+    margin: 0;
+    font-size: 1em;
+    font-weight: 600;
+    color: #000000;
+}
+.deal-sale-price-box ul li span{
+    color: inherit;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
