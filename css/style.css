@@ -36,40 +36,6 @@ a:hover{
 #main-menu ul a{
 	color: #fff;
 }
-
-
-/* equal card height */
-.row-equal > div[class*='col-'] {
-    display: flex;
-    flex: 1 0 auto;
-}
-
-.row-equal .card {
-   width: 100%;
-}
-
-/* ensure equal card height inside carousel */
-.carousel-inner>.row-equal.active, 
-.carousel-inner>.row-equal.next, 
-.carousel-inner>.row-equal.prev {
-    display: flex;
-}
-.sr-only{
-	color: #000;
-}
-/* prevent flicker during transition */
-.carousel-inner>.row-equal.active.left, 
-.carousel-inner>.row-equal.active.right {
-    opacity: 0.5;
-    display: flex;
-}
-
-
-/* control image height */
-.card-img-top-250 {
-    max-height: 250px;
-    overflow:hidden;
-}
 /*nav bar */
 header .form-inline .btn{
 	border-top-left-radius: 0;
@@ -88,10 +54,14 @@ header .form-inline .btn{
 						slider
 ###############################################################
 */
+#carouselExampleControls .card-title{
+    height: auto;
+}
 .slide-footer{
 	border-top: 1px solid rgba(0,0,0,.125);
 	background-color:#39abf2;
 	color: #fff;
+    padding: 1em;
 
 }
 .slide-title{
@@ -112,6 +82,16 @@ header .form-inline .btn{
 	background-color: #fff;
 	border-color: #fff;
 }
+.carousel-control-next, .carousel-control-prev{
+    width: 4%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+
 
 /*
 ###############################################################
@@ -298,4 +278,79 @@ header .form-inline .btn{
     font-weight: 300;
     font-size: 12px;
     letter-spacing: 1px;
+}
+/*
+###############################################################
+                     deal detail page
+###############################################################
+*/
+.login-form,.registration-form{
+    border: 1px solid #f6f6f6;
+    width: 50%;
+}
+/*
+###############################################################
+                       cart table 
+###############################################################
+*/
+.param {
+    margin-bottom: 7px;
+    line-height: 1.4;
+}
+.param-inline dt {
+    display: inline-block;
+}
+.param dt {
+    margin: 0;
+    margin-right: 7px;
+    font-weight: 600;
+}
+.param-inline dd {
+    vertical-align: baseline;
+    display: inline-block;
+}
+
+.param dd {
+    margin: 0;
+    vertical-align: baseline;
+} 
+
+.shopping-cart-wrap .price {
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+    display: block;
+}
+var {
+    font-style: normal;
+}
+
+.media img {
+    margin-right: 1rem;
+}
+.img-sm {
+    width: 90px;
+    max-height: 75px;
+    object-fit: cover;
+}
+/*
+###############################################################
+                     media queries for mobils
+###############################################################
+*/
+@media(max-width: 480px){
+    .form-inline{
+        width: auto;
+    }
+    #loc-selector{
+        width: 100%;
+        margin-top: 1em;
+    }
+    #search-bar{
+        width: 87%;
+    }
+    .login-form,.registration-form{
+        width: 90%;
+    }
 }
