@@ -336,6 +336,35 @@ var {
 }
 /*
 ###############################################################
+                     Vendor dashboard
+###############################################################
+*/
+#vendor_nav{
+    background: rgb(118,195,83);
+    background: -moz-linear-gradient(90deg, rgba(118,195,83,1) 35%, rgba(149,195,83,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(118,195,83,1) 35%, rgba(149,195,83,1) 100%);
+    background: linear-gradient(90deg, rgba(118,195,83,1) 35%, rgba(149,195,83,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#76c353",endColorstr="#95c353",GradientType=1); 
+}
+#vendor_nav .nav-item{
+    border-bottom: 1px solid #fff;
+}
+#vendor_nav a{
+    color: rgba(255,255,255,.8);
+}
+#vendor_nav a:hover{
+    color: #fff;
+    font-weight: 600;
+}
+#vendor_nav .active a{
+    color: #fff;
+    font-weight: 600;
+}
+.table td,.table th{
+    vertical-align: middle;
+}
+/*
+###############################################################
                      media queries for mobils
 ###############################################################
 */
